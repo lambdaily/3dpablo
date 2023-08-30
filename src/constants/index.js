@@ -208,7 +208,7 @@ const projects = [
       },
     ],
     image: festival,
-    source_code_link: 'https://github.com/',
+    source_code_link: 'https://github.com/lambdaily',
   },
   {
     name: 'Web Music Player ',
