@@ -20,7 +20,13 @@ import {
   carrent,
   jobit,
   tripguide,
-  threejs,
+  portfolio,
+  festival,
+  gif,
+  emoji,
+  test,
+  pig,
+  reproductor,
 } from '../assets';
 
 export const defaultOptions = {
@@ -130,58 +136,20 @@ const technologies = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Gifs App',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'A website to search for your favorite GIF, which utilizes the Giphy API.',
     tags: [
       {
-        name: 'react',
+        name: 'Javascript/REACT',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'react',
+        name: 'Giphy API',
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
+        name: 'html',
         color: 'green-text-gradient',
       },
       {
@@ -189,8 +157,117 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
+    image: gif,
+    source_code_link: 'https://gentle-biscotti-590ded.netlify.app/',
+  },
+  {
+    name: 'Pig pockets',
+    description:
+      'Augmented reality game interface under development for mobile devices, using C#, Vuforia Engine, and Unity. - Currently under development',
+    tags: [
+      {
+        name: 'C#',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Unity',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Vuforia engine',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'AR',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'figma',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: pig,
+  },
+
+  {
+    name: 'Music Festival',
+    description:
+      'This project entails the development of a website dedicated to a music festival. The web application has been constructed using core web technologies such as JavaScript and CSS to provide an interactive and engaging user experience.',
+    tags: [
+      {
+        name: 'javascript',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'gsap animation library',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: festival,
     source_code_link: 'https://github.com/',
+  },
+  {
+    name: 'Web Music Player ',
+    description:
+      'A music player crafted using HTML, CSS, and JavaScript, featuring a design style known as neumorphism or sketchmorphism',
+    tags: [
+      {
+        name: 'css',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'html',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Javascript',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: reproductor,
+    source_code_link: 'https://lambdaily.github.io/neumoplayer/',
+  },
+  {
+    name: 'My portfolio web',
+    description:
+      'A website dedicated to my portfolio using React and Three.js, a library for 3D development.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'three js',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: portfolio,
+    source_code_link: 'https://lambdaily.github.io/3dpablo/',
+  },
+  {
+    name: 'Couple Compatibility Test Website ',
+    description:
+      'A project created for a client who needed a test for Valentines day',
+    tags: [
+      {
+        name: 'javascript / React',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'css',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: test,
+    source_code_link: 'https://curious-sherbet-e0abb5.netlify.app/',
   },
 ];
 

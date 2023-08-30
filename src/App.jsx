@@ -5,6 +5,8 @@ import AboutPage from './components/About';
 import Experience from './components/Experience';
 import Tech from './components/Tech';
 import Contact from './components/Contact';
+import WorksPage from './components/Works';
+import MyStack from './components/MyStack';
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
         </div>
         <AboutPage />
         <Experience />
+        <WorksPage />
+        <MyStack />
         <Tech />
         <Contact />
       </div>
