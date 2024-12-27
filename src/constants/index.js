@@ -188,28 +188,6 @@ const projects = [
     ],
     image: pig,
   },
-
-  {
-    name: 'Music Festival',
-    description:
-      'This project entails the development of a website dedicated to a music festival. The web application has been constructed using core web technologies such as JavaScript and CSS to provide an interactive and engaging user experience.',
-    tags: [
-      {
-        name: 'javascript',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'gsap animation library',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: festival,
-    source_code_link: 'https://github.com/lambdaily',
-  },
   {
     name: 'Web Music Player ',
     description:
