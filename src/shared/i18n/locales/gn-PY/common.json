@@ -1,0 +1,114 @@
+{
+  "language": {
+    "en": "EN",
+    "es": "ES",
+    "fr": "FR",
+    "gnPy": "GN"
+  },
+  "nav": {
+    "about": "Che rehegua",
+    "work": "Tembiapo",
+    "contact": "Ñe'ẽ"
+  },
+  "hero": {
+    "greetingPrefix": "Mba'eteko, che héra",
+    "subtitlePrefix": "Amoheñói apopyrã porãite ko'ãva ndive",
+    "highlight": "Jeikove Oñondive Porãva"
+  },
+  "about": {
+    "title": "Che rehegua",
+    "description": "Che ha'e peteĩ desarrollador paraguayo, sistema análisis-pe ajapo kuri. Aipota ajapo solución pyahu JavaScript ha React reheve. Aikuaa machine learning Python reheve ha peteĩ base porã MySQL ha MongoDB-pe. Chepy'arory Realidad Virtual ha Aumentada rehe, Vuforia ndive, ha avei interfaz ojeporukuaáva porã ajapo hag̃ua."
+  },
+  "services": {
+    "jsReactDeveloper": "Desarrollador JS/React",
+    "machineLearningExplorer": "Machine Learning rehegua pytyvõhára",
+    "figmaAdobeEnthusiast": "Figma ha Adobe XD rayhuhára",
+    "multidisciplinaryCreativeDeveloper": "Desarrollador Creativo Heta Mbo'ehaópe"
+  },
+  "experience": {
+    "title": "Tembiapo Rembiasakue.",
+    "freelance": {
+      "title": "Desarrollador Freelance",
+      "date": "Jasyapy 2018 - Jasyrundy 2019",
+      "points": [
+        "Amoheñói web app JavaScript ha PHP ndive.",
+        "Ajapo diseño responsive."
+      ]
+    },
+    "cerocinco": {
+      "title": "Desarrollador Web",
+      "date": "Jasykõi 2019 - Ko'ág̃a",
+      "points": [
+        "Amoheñói ha añangareko web app React ha ambue tecnología ndive.",
+        "Ajapo solución web JavaScript, PHP ha ambue tecnología ndive.",
+        "Amoheñói interfaz ha diseño responsive rehegua.",
+        "Ahaikuaa manual usuario ha ambo'e cliente-kuérape."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Ñe'ẽ",
+    "nameLabel": "Nde réra",
+    "emailLabel": "Nde correo",
+    "messageLabel": "Nde ñe'ẽ",
+    "namePlaceholder": "Mba'éichapa nde réra?",
+    "emailPlaceholder": "Mba'épa nde correo?",
+    "messagePlaceholder": "Mba'épa erese?",
+    "send": "Emondo",
+    "sending": "Oñemondo hína...",
+    "success": "Aguyje. Ajevyta ndéve pya'e hag̃uáicha.",
+    "error": "Oops, oiko vai. Eha'ãjeyna.",
+    "toName": "Portfolio Renda Guive"
+  },
+  "stack": {
+    "title": "Ko'ã tecnología aikuaáva:",
+    "description": "Html5 - Css3 - Javascript - React - Tailwind css - GIT - Figma (interfaz apopyrã) - Mysql"
+  },
+  "a11y": {
+    "projectImage": "Proyecto ra'ãnga",
+    "sourceCode": "Código ypykue"
+  },
+  "projects": {
+    "sectionLabel": "Che rembiapo",
+    "title": "Proyectokuéra.",
+    "description": "Ko'ã proyecto ohechauka che katupyry ha che experiencia tembiapo añetetépe. Káda proyecto oñemombe'u mbykymi ha orekó link código ha demo rehegua. Upéva ohechauka che ikatuha asoluciona problema ijetu'úva, amba'apo tecnología iñambuéva ndive ha amoguata proyecto porã.",
+    "gifApp": {
+      "name": "Gifs App",
+      "description": "Página hag̃ua reheka nde GIF rehayhuvéva Giphy API rupive."
+    },
+    "pigPockets": {
+      "name": "Pig pockets",
+      "description": "Interfaz juego AR móvil-pe C#, Vuforia Engine ha Unity ndive. Oñemoheñói gueteri hína."
+    },
+    "webMusicPlayer": {
+      "name": "Web Music Player",
+      "description": "Música reproductor ojapóva HTML, CSS ha JavaScript ndive, estilo neumorphism/sketchmorphism reheve."
+    },
+    "portfolioWeb": {
+      "name": "Che portfolio web",
+      "description": "Portfolio web ojapóva React ha Three.js ndive experiencias 3D-pe g̃uarã."
+    },
+    "compatibilityTest": {
+      "name": "Pareja Compatibilidad Test Renda",
+      "description": "Proyecto ojejapóva cliente peteĩ test San Valentín-pe g̃uarã rehe."
+    },
+    "tags": {
+      "javascriptReact": "Javascript/REACT",
+      "giphyApi": "Giphy API",
+      "html": "html",
+      "css": "css",
+      "csharp": "C#",
+      "unity": "Unity",
+      "vuforia": "Vuforia engine",
+      "ar": "AR",
+      "figma": "figma",
+      "javascript": "Javascript",
+      "nodejs": "Node JS",
+      "git": "git",
+      "react": "react",
+      "threejs": "three js",
+      "tailwind": "tailwind",
+      "javascriptReactSpaced": "javascript / React"
+    }
+  }
+}

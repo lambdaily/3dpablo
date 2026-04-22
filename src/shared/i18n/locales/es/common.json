@@ -1,0 +1,124 @@
+{
+  "language": {
+    "en": "EN",
+    "es": "ES",
+    "fr": "FR",
+    "gnPy": "GN"
+  },
+  "nav": {
+    "about": "Sobre mí",
+    "work": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "greetingPrefix": "Hola, soy",
+    "subtitlePrefix": "Creo productos digitales con",
+    "highlight": "experiencias claras y cercanas"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy desarrollador paraguayo y egresado de Análisis de Sistemas. Me enfoco en construir soluciones web con JavaScript y React, combinando funcionalidad con una buena experiencia de usuario. También trabajo con machine learning en Python y tengo base en MySQL y MongoDB. Me interesa especialmente la Realidad Virtual y Aumentada con Vuforia, y disfruto diseñar interfaces que se vean bien y se sientan simples de usar."
+  },
+  "services": {
+    "jsReactDeveloper": "Desarrollo web con JS/React",
+    "machineLearningExplorer": "Proyectos con machine learning",
+    "figmaAdobeEnthusiast": "Diseño UI con Figma y Adobe XD",
+    "multidisciplinaryCreativeDeveloper": "Desarrollo creativo multidisciplinario"
+  },
+  "experience": {
+    "title": "Experiencia profesional.",
+    "povertyStoplight": {
+      "title": "Frontend Tech Lead",
+      "date": "Feb 2025 - Actualidad",
+      "points": [
+        "Lidero desarrollo frontend de aplicaciones escalables con foco en experiencia de usuario.",
+        "Trabajo con React y React Native para web y móvil, manteniendo consistencia entre plataformas.",
+        "Actualmente impulsamos una nueva app en Flutter, migrando la base existente en React Native."
+      ]
+    },
+    "posibilian": {
+      "title": "Fullstack Developer",
+      "date": "Sep 2023 - Feb 2025",
+      "points": [
+        "Desarrollé herramientas web y depuré funcionalidades backend con Nest.js y PostgreSQL para mejorar rendimiento y precisión.",
+        "Construí y mantuve APIs escalables, aplicando técnicas de procesamiento de datos para optimizar la eficiencia de las aplicaciones.",
+        "Diseñé y desarrollé interfaces con React y Tailwind CSS, logrando experiencias responsive y fluidas.",
+        "Creé y desplegué soluciones de machine learning con Python, incluyendo análisis de sentimiento e integraciones con Stable Diffusion, Llama3 y OpenAI."
+      ]
+    },
+    "cerocinco": {
+      "title": "Desarrollador Web",
+      "date": "Feb 2018 - Ago 2023",
+      "points": [
+        "Desarrollé sitios web y e-commerce con WordPress, JavaScript y PHP para distintos clientes.",
+        "Implementé soluciones headless con la API de WordPress, conectando frontends modernos en React.",
+        "Apliqué mejoras continuas en rendimiento, UX y mantenimiento junto a equipos multidisciplinarios."
+      ]
+    }
+  },
+  "projects": {
+    "sectionLabel": "Mi trabajo",
+    "title": "Proyectos.",
+    "description": "Estos proyectos reflejan cómo trabajo en casos reales: desde la idea inicial hasta la implementación. En cada uno comparto una breve descripción, el código fuente y, cuando está disponible, una demo en vivo. El objetivo es mostrar mi forma de resolver problemas, iterar y entregar soluciones útiles.",
+    "gifApp": {
+      "name": "Gifs App",
+      "description": "Aplicación para buscar y explorar GIFs en tiempo real usando la API de Giphy."
+    },
+    "pigPockets": {
+      "name": "Pig pockets",
+      "description": "Interfaz de juego en realidad aumentada para móviles, desarrollada con C#, Vuforia Engine y Unity. Actualmente en desarrollo."
+    },
+    "webMusicPlayer": {
+      "name": "Web Music Player",
+      "description": "Reproductor web creado con HTML, CSS y JavaScript, con una propuesta visual inspirada en neumorphism/sketchmorphism."
+    },
+    "portfolioWeb": {
+      "name": "Mi portafolio web",
+      "description": "Sitio de portafolio construido con React y Three.js para presentar experiencias 3D interactivas."
+    },
+    "compatibilityTest": {
+      "name": "Test de compatibilidad para parejas",
+      "description": "Proyecto hecho para un cliente que buscaba una experiencia temática para San Valentín."
+    },
+    "tags": {
+      "javascriptReact": "Javascript/REACT",
+      "giphyApi": "Giphy API",
+      "html": "html",
+      "css": "css",
+      "csharp": "C#",
+      "unity": "Unity",
+      "vuforia": "Vuforia engine",
+      "ar": "AR",
+      "figma": "figma",
+      "javascript": "Javascript",
+      "nodejs": "Node JS",
+      "git": "git",
+      "react": "react",
+      "threejs": "three js",
+      "tailwind": "tailwind",
+      "javascriptReactSpaced": "javascript / React"
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "nameLabel": "Tu nombre",
+    "emailLabel": "Tu correo",
+    "messageLabel": "Tu mensaje",
+    "namePlaceholder": "Ej: Juan Pérez",
+    "emailPlaceholder": "ejemplo@correo.com",
+    "messagePlaceholder": "Cuéntame en qué te puedo ayudar",
+    "send": "Enviar",
+    "sending": "Enviando...",
+    "success": "Gracias por escribir. Te respondo lo antes posible.",
+    "error": "Hubo un problema al enviar el mensaje. Inténtalo de nuevo.",
+    "toName": "Sitio de Portafolio"
+  },
+  "stack": {
+    "title": "Tecnologías con las que trabajo:",
+    "description": "HTML5 - CSS3 - JavaScript - React - Tailwind CSS - Git - Figma (diseño de interfaces) - MySQL"
+  },
+  "a11y": {
+    "projectImage": "Imagen del proyecto",
+    "sourceCode": "Código fuente"
+  }
+}

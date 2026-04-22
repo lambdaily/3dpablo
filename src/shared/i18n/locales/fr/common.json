@@ -1,0 +1,124 @@
+{
+  "language": {
+    "en": "EN",
+    "es": "ES",
+    "fr": "FR",
+    "gnPy": "GN"
+  },
+  "nav": {
+    "about": "À propos",
+    "work": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greetingPrefix": "Salut, je suis",
+    "subtitlePrefix": "Je développe des solutions créatives avec",
+    "highlight": "Expériences Conviviales"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "description": "Développeur paraguayen diplômé en Analyse des Systèmes. J'aime créer des solutions innovantes avec JavaScript et React. J'ai des connaissances en machine learning avec Python et de bonnes bases en MySQL et MongoDB. Je suis passionné par la réalité virtuelle et augmentée avec Vuforia, ainsi que par la création d'interfaces engageantes et faciles à utiliser."
+  },
+  "services": {
+    "jsReactDeveloper": "Développeur JS/React",
+    "machineLearningExplorer": "Explorateur Machine Learning",
+    "figmaAdobeEnthusiast": "Passionné de Figma et Adobe XD",
+    "multidisciplinaryCreativeDeveloper": "Développeur Créatif Multidisciplinaire"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle.",
+    "povertyStoplight": {
+      "title": "Frontend Tech Lead",
+      "date": "Fév 2025 - Aujourd'hui",
+      "points": [
+        "Je pilote le développement frontend d'applications évolutives, avec un fort focus sur l'expérience utilisateur.",
+        "Je travaille avec React et React Native pour le web et le mobile, en gardant une expérience cohérente entre plateformes.",
+        "Nous développons actuellement une nouvelle application en Flutter, avec migration progressive de l'app React Native existante."
+      ]
+    },
+    "posibilian": {
+      "title": "Développeur Fullstack",
+      "date": "Sep 2023 - Fév 2025",
+      "points": [
+        "J'ai développé des outils web et débogué des fonctionnalités backend avec Nest.js et PostgreSQL pour améliorer performance et précision.",
+        "J'ai construit et maintenu des API scalables, en appliquant des techniques de traitement de données pour optimiser l'efficacité applicative.",
+        "J'ai conçu et développé des interfaces avec React et Tailwind CSS, en assurant des expériences responsive et fluides.",
+        "J'ai créé et déployé des solutions de machine learning en Python, incluant l'analyse de sentiment et des intégrations avec Stable Diffusion, Llama3 et OpenAI."
+      ]
+    },
+    "cerocinco": {
+      "title": "Développeur Web",
+      "date": "Fév 2018 - Aoû 2023",
+      "points": [
+        "J'ai développé des sites web et e-commerce avec WordPress, JavaScript et PHP pour différents clients.",
+        "J'ai mis en place des architectures headless via l'API WordPress, connectées à des frontends modernes en React.",
+        "J'ai appliqué des améliorations continues en performance, UX et maintenabilité, en collaboration avec des équipes pluridisciplinaires."
+      ]
+    }
+  },
+  "projects": {
+    "sectionLabel": "Mon travail",
+    "title": "Projets.",
+    "description": "Les projets suivants présentent mes compétences et mon expérience à travers des cas réels. Chaque projet est brièvement décrit avec des liens vers le code et des démos en direct. Ils reflètent ma capacité à résoudre des problèmes complexes, travailler avec différentes technologies et gérer des projets efficacement.",
+    "gifApp": {
+      "name": "Gifs App",
+      "description": "Site pour rechercher vos GIF favoris en utilisant l'API Giphy."
+    },
+    "pigPockets": {
+      "name": "Pig pockets",
+      "description": "Interface de jeu en réalité augmentée pour mobile avec C#, Vuforia Engine et Unity. En cours de développement."
+    },
+    "webMusicPlayer": {
+      "name": "Web Music Player",
+      "description": "Lecteur de musique créé avec HTML, CSS et JavaScript, au style neumorphism/sketchmorphism."
+    },
+    "portfolioWeb": {
+      "name": "Mon portfolio web",
+      "description": "Site portfolio construit avec React et Three.js pour des expériences 3D."
+    },
+    "compatibilityTest": {
+      "name": "Site de Test de Compatibilité de Couple",
+      "description": "Projet réalisé pour un client qui avait besoin d'un test pour la Saint-Valentin."
+    },
+    "tags": {
+      "javascriptReact": "Javascript/REACT",
+      "giphyApi": "Giphy API",
+      "html": "html",
+      "css": "css",
+      "csharp": "C#",
+      "unity": "Unity",
+      "vuforia": "Vuforia engine",
+      "ar": "AR",
+      "figma": "figma",
+      "javascript": "Javascript",
+      "nodejs": "Node JS",
+      "git": "git",
+      "react": "react",
+      "threejs": "three js",
+      "tailwind": "tailwind",
+      "javascriptReactSpaced": "javascript / React"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "nameLabel": "Votre nom",
+    "emailLabel": "Votre email",
+    "messageLabel": "Votre message",
+    "namePlaceholder": "Comment vous appelez-vous ?",
+    "emailPlaceholder": "Quelle est votre adresse email ?",
+    "messagePlaceholder": "Que souhaitez-vous dire ?",
+    "send": "Envoyer",
+    "sending": "Envoi...",
+    "success": "Merci. Je vous répondrai dès que possible.",
+    "error": "Oups, une erreur s'est produite. Veuillez réessayer.",
+    "toName": "Depuis le Site Portfolio"
+  },
+  "stack": {
+    "title": "Quelques technologies que je maîtrise :",
+    "description": "Html5 - Css3 - Javascript - React - Tailwind css - GIT - Figma (création d'interfaces) - Mysql"
+  },
+  "a11y": {
+    "projectImage": "Image du projet",
+    "sourceCode": "Code source"
+  }
+}

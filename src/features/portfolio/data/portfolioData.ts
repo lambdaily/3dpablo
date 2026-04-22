@@ -13,6 +13,8 @@ import {
   git,
   figma,
   logo,
+  psp,
+  pst,
   portfolio,
   gif,
   test,
@@ -22,36 +24,36 @@ import {
 
 export type NavLink = {
   id: string;
-  title: string;
+  titleKey: string;
 };
 
 export type Service = {
-  title: string;
+  titleKey: string;
   icon: string;
 };
 
 export type ExperienceItem = {
-  title: string;
+  titleKey: string;
   company_name: string;
+  dateKey: string;
   icon: string;
   iconBg: string;
-  date: string;
-  points: string[];
+  pointKeys: string[];
 };
 
 export type Technology = {
-  name: string;
+  nameKey: string;
   icon: string;
 };
 
 export type ProjectTag = {
-  name: string;
+  nameKey: string;
   color: string;
 };
 
 export type Project = {
-  name: string;
-  description: string;
+  nameKey: string;
+  descriptionKey: string;
   tags: ProjectTag[];
   image: string;
   source_code_link?: string;
@@ -66,122 +68,134 @@ export const defaultOptions = {
 export const navLinks: NavLink[] = [
   {
     id: 'about',
-    title: 'About',
+    titleKey: 'nav.about',
   },
   {
     id: 'work',
-    title: 'Work',
+    titleKey: 'nav.work',
   },
   {
     id: 'contact',
-    title: 'Contact',
+    titleKey: 'nav.contact',
   },
 ];
 
 const services: Service[] = [
   {
-    title: 'JS/React Developer',
+    titleKey: 'services.jsReactDeveloper',
     icon: web,
   },
   {
-    title: 'Machine Learning Explorer ',
+    titleKey: 'services.machineLearningExplorer',
     icon: mobile,
   },
   {
-    title: 'Figma and Adobe XD Enthusiast ',
+    titleKey: 'services.figmaAdobeEnthusiast',
     icon: backend,
   },
   {
-    title: 'Multidisciplinary Creative Developer:',
+    titleKey: 'services.multidisciplinaryCreativeDeveloper',
     icon: creator,
   },
 ];
 
 const experiences: ExperienceItem[] = [
   {
-    title: 'Freelance Developer',
-    company_name: '',
-    icon: logo,
+    titleKey: 'experience.povertyStoplight.title',
+    company_name: 'Poverty Stoplight - Fundacion Paraguaya',
+    dateKey: 'experience.povertyStoplight.date',
+    icon: psp,
     iconBg: '#eebbc3',
-    date: 'March 2018 - April 2019',
-    points: [
-      'Developing web applications using javascript and php',
-      'Implementing responsive design',
+    pointKeys: [
+      'experience.povertyStoplight.points.0',
+      'experience.povertyStoplight.points.1',
+      'experience.povertyStoplight.points.2',
     ],
   },
   {
-    title: 'Web Developer',
-    company_name: 'Cerocinco',
+    titleKey: 'experience.posibilian.title',
+    company_name: 'Posibilian Tech',
+    dateKey: 'experience.posibilian.date',
+    icon: pst,
+    iconBg: '#E6DEDD',
+    pointKeys: [
+      'experience.posibilian.points.0',
+      'experience.posibilian.points.1',
+      'experience.posibilian.points.2',
+      'experience.posibilian.points.3',
+    ],
+  },
+  {
+    titleKey: 'experience.cerocinco.title',
+    company_name: 'Cerocinco S.A.',
+    dateKey: 'experience.cerocinco.date',
     icon: cerocinco,
     iconBg: '#E6DEDD',
-    date: 'Feb 2019 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Creating and upkeeping web applications through the utilization of javascript, php and associated technologies.',
-      'Creating user interfaces, implementing responsive design techniques.',
-      'Creating user manuals for web applications and providing training to clients',
+    pointKeys: [
+      'experience.cerocinco.points.0',
+      'experience.cerocinco.points.1',
+      'experience.cerocinco.points.2',
     ],
   },
 ];
 
 const technologies: Technology[] = [
   {
-    name: 'HTML 5',
+    nameKey: 'projects.tags.html',
     icon: html,
   },
   {
-    name: 'CSS 3',
+    nameKey: 'projects.tags.css',
     icon: css,
   },
   {
-    name: 'JavaScript',
+    nameKey: 'projects.tags.javascript',
     icon: javascript,
   },
 
   {
-    name: 'React JS',
+    nameKey: 'projects.tags.react',
     icon: reactjs,
   },
 
   {
-    name: 'Tailwind CSS',
+    nameKey: 'projects.tags.tailwind',
     icon: tailwind,
   },
   {
-    name: 'Node JS',
+    nameKey: 'projects.tags.nodejs',
     icon: nodejs,
   },
 
   {
-    name: 'git',
+    nameKey: 'projects.tags.git',
     icon: git,
   },
   {
-    name: 'figma',
+    nameKey: 'projects.tags.figma',
     icon: figma,
   },
 ];
 
 const projects: Project[] = [
   {
-    name: 'Gifs App',
-    description:
-      'A website to search for your favorite GIF, which utilizes the Giphy API.',
+    nameKey: 'projects.gifApp.name',
+    descriptionKey: 'projects.gifApp.description',
     tags: [
       {
-        name: 'Javascript/REACT',
+        nameKey: 'projects.tags.javascriptReact',
         color: 'blue-text-gradient',
       },
       {
-        name: 'Giphy API',
+        nameKey: 'projects.tags.giphyApi',
         color: 'blue-text-gradient',
       },
       {
-        name: 'html',
+        nameKey: 'projects.tags.html',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        nameKey: 'projects.tags.css',
         color: 'pink-text-gradient',
       },
     ],
@@ -189,48 +203,46 @@ const projects: Project[] = [
     source_code_link: 'https://gentle-biscotti-590ded.netlify.app/',
   },
   {
-    name: 'Pig pockets',
-    description:
-      'Augmented reality game interface under development for mobile devices, using C#, Vuforia Engine, and Unity. - Currently under development',
+    nameKey: 'projects.pigPockets.name',
+    descriptionKey: 'projects.pigPockets.description',
     tags: [
       {
-        name: 'C#',
+        nameKey: 'projects.tags.csharp',
         color: 'blue-text-gradient',
       },
       {
-        name: 'Unity',
+        nameKey: 'projects.tags.unity',
         color: 'blue-text-gradient',
       },
       {
-        name: 'Vuforia engine',
+        nameKey: 'projects.tags.vuforia',
         color: 'green-text-gradient',
       },
       {
-        name: 'AR',
+        nameKey: 'projects.tags.ar',
         color: 'pink-text-gradient',
       },
       {
-        name: 'figma',
+        nameKey: 'projects.tags.figma',
         color: 'pink-text-gradient',
       },
     ],
     image: pig,
   },
   {
-    name: 'Web Music Player ',
-    description:
-      'A music player crafted using HTML, CSS, and JavaScript, featuring a design style known as neumorphism or sketchmorphism',
+    nameKey: 'projects.webMusicPlayer.name',
+    descriptionKey: 'projects.webMusicPlayer.description',
     tags: [
       {
-        name: 'css',
+        nameKey: 'projects.tags.css',
         color: 'blue-text-gradient',
       },
       {
-        name: 'html',
+        nameKey: 'projects.tags.html',
         color: 'green-text-gradient',
       },
       {
-        name: 'Javascript',
+        nameKey: 'projects.tags.javascript',
         color: 'pink-text-gradient',
       },
     ],
@@ -238,20 +250,19 @@ const projects: Project[] = [
     source_code_link: 'https://lambdaily.github.io/neumoplayer/',
   },
   {
-    name: 'My portfolio web',
-    description:
-      'A website dedicated to my portfolio using React and Three.js, a library for 3D development.',
+    nameKey: 'projects.portfolioWeb.name',
+    descriptionKey: 'projects.portfolioWeb.description',
     tags: [
       {
-        name: 'react',
+        nameKey: 'projects.tags.react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'three js',
+        nameKey: 'projects.tags.threejs',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        nameKey: 'projects.tags.tailwind',
         color: 'pink-text-gradient',
       },
     ],
@@ -259,16 +270,15 @@ const projects: Project[] = [
     source_code_link: 'https://lambdaily.github.io/3dpablo/',
   },
   {
-    name: 'Couple Compatibility Test Website ',
-    description:
-      'A project created for a client who needed a test for Valentines day',
+    nameKey: 'projects.compatibilityTest.name',
+    descriptionKey: 'projects.compatibilityTest.description',
     tags: [
       {
-        name: 'javascript / React',
+        nameKey: 'projects.tags.javascriptReactSpaced',
         color: 'blue-text-gradient',
       },
       {
-        name: 'css',
+        nameKey: 'projects.tags.css',
         color: 'green-text-gradient',
       },
     ],

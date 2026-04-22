@@ -1,13 +1,13 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const MyStack = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-row flex-wrap justify-center gap-10">
-      <h1>Some of the technologies I handle: </h1>
-      <h3>
-        Html5 - Css3 - Javascript - React - Tailwind css - GIT - Figma (for
-        interface creation) - Mysql
-      </h3>
+      <h1>{t('stack.title')}</h1>
+      <h3>{t('stack.description')}</h3>
     </div>
   );
 };

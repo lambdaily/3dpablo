@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 import { styles } from '@shared/styles/styles';
 import { navLinks } from '@features/portfolio/data/portfolioData';
 import type { NavLink } from '@features/portfolio/data/portfolioData';
 import { logo, menu, close } from '@assets';
+import { LanguageSwitcher } from '@shared/i18n';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -55,14 +58,18 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? 'text-white' : 'text-secondary'
+                active === nav.id ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              onClick={() => setActive(nav.id)}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`#${nav.id}`}>{t(nav.titleKey)}</a>
             </li>
           ))}
         </ul>
+
+        <div className="hidden sm:flex">
+          <LanguageSwitcher />
+        </div>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
@@ -75,24 +82,27 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? 'hidden' : 'flex'
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[220px] z-10 rounded-xl flex-col gap-4`}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav: NavLink) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? 'text-white' : 'text-secondary'
+                    active === nav.id ? 'text-white' : 'text-secondary'
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(nav.title);
+                    setActive(nav.id);
                   }}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  <a href={`#${nav.id}`}>{t(nav.titleKey)}</a>
                 </li>
               ))}
             </ul>
+            <div className="w-full border-t border-white/10 pt-3">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       </div>

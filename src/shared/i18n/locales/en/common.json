@@ -1,0 +1,124 @@
+{
+  "language": {
+    "en": "EN",
+    "es": "ES",
+    "fr": "FR",
+    "gnPy": "GN"
+  },
+  "nav": {
+    "about": "About",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greetingPrefix": "Hi, I'm",
+    "subtitlePrefix": "I develop creative solutions with",
+    "highlight": "Friendly Experiences"
+  },
+  "about": {
+    "title": "About me",
+    "description": "A Paraguayan developer, graduated in Systems Analysis, I enjoy crafting innovative solutions using JavaScript and React. I have knowledge in machine learning with Python and a foundational proficiency in MySQL and MongoDB. I am enthusiastic about Virtual and Augmented Reality, using the Vuforia engine, as well as creating engaging and user-friendly interfaces."
+  },
+  "services": {
+    "jsReactDeveloper": "JS/React Developer",
+    "machineLearningExplorer": "Machine Learning Explorer",
+    "figmaAdobeEnthusiast": "Figma and Adobe XD Enthusiast",
+    "multidisciplinaryCreativeDeveloper": "Multidisciplinary Creative Developer"
+  },
+  "experience": {
+    "title": "Work Experience.",
+    "povertyStoplight": {
+      "title": "Frontend Tech Lead",
+      "date": "Feb 2025 - Current",
+      "points": [
+        "Leading frontend delivery of scalable, user-focused applications.",
+        "Building for web and mobile with React and React Native while keeping product consistency.",
+        "Driving a new Flutter app while migrating the current React Native app progressively."
+      ]
+    },
+    "posibilian": {
+      "title": "Fullstack Developer",
+      "date": "Sep 2023 - Feb 2025",
+      "points": [
+        "Developed web tools and debugged backend functionalities using Nest.js and PostgreSQL to improve performance and accuracy.",
+        "Built and maintained scalable APIs, applying data processing techniques to enhance application efficiency.",
+        "Designed and developed user-friendly interfaces with React and Tailwind CSS, ensuring responsive and seamless experiences.",
+        "Created and deployed machine learning solutions with Python, including sentiment analysis and integrations with Stable Diffusion, Llama3, and OpenAI APIs."
+      ]
+    },
+    "cerocinco": {
+      "title": "Web Developer",
+      "date": "Feb 2018 - Aug 2023",
+      "points": [
+        "Developed websites and e-commerce solutions with WordPress, JavaScript, and PHP for multiple clients.",
+        "Implemented headless solutions using the WordPress API, connecting modern React frontends.",
+        "Applied continuous improvements in performance, UX, and maintainability with cross-functional teams."
+      ]
+    }
+  },
+  "projects": {
+    "sectionLabel": "My work",
+    "title": "Projects.",
+    "description": "The following projects showcase my skills and experience through real-world examples. Each project is briefly described with links to code repositories and live demos. They reflect my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+    "gifApp": {
+      "name": "Gifs App",
+      "description": "A website to search for your favorite GIFs using the Giphy API."
+    },
+    "pigPockets": {
+      "name": "Pig pockets",
+      "description": "Augmented reality game interface for mobile devices using C#, Vuforia Engine, and Unity. Currently under development."
+    },
+    "webMusicPlayer": {
+      "name": "Web Music Player",
+      "description": "A music player built with HTML, CSS, and JavaScript using a neumorphism/sketchmorphism style."
+    },
+    "portfolioWeb": {
+      "name": "My portfolio web",
+      "description": "A portfolio website built with React and Three.js for 3D experiences."
+    },
+    "compatibilityTest": {
+      "name": "Couple Compatibility Test Website",
+      "description": "A project created for a client who needed a Valentine's Day compatibility test."
+    },
+    "tags": {
+      "javascriptReact": "Javascript/REACT",
+      "giphyApi": "Giphy API",
+      "html": "html",
+      "css": "css",
+      "csharp": "C#",
+      "unity": "Unity",
+      "vuforia": "Vuforia engine",
+      "ar": "AR",
+      "figma": "figma",
+      "javascript": "Javascript",
+      "nodejs": "Node JS",
+      "git": "git",
+      "react": "react",
+      "threejs": "three js",
+      "tailwind": "tailwind",
+      "javascriptReactSpaced": "javascript / React"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "nameLabel": "Your Name",
+    "emailLabel": "Your email",
+    "messageLabel": "Your Message",
+    "namePlaceholder": "What's your name?",
+    "emailPlaceholder": "What's your email address?",
+    "messagePlaceholder": "What do you want to say?",
+    "send": "Send",
+    "sending": "Sending...",
+    "success": "Thank you. I will get back to you as soon as possible.",
+    "error": "Ahh, something went wrong. Please try again.",
+    "toName": "From Portfolio Website"
+  },
+  "stack": {
+    "title": "Some of the technologies I handle:",
+    "description": "Html5 - Css3 - Javascript - React - Tailwind css - GIT - Figma (for interface creation) - Mysql"
+  },
+  "a11y": {
+    "projectImage": "Project image",
+    "sourceCode": "Source code"
+  }
+}

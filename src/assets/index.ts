@@ -28,6 +28,8 @@ import test from './test.png';
 import reproductor from './reproductor.png';
 import pig from './pig.png';
 import meta from './companies/meta.png';
+import psp from './companies/psp.jpg';
+import pst from './companies/pst.png';
 import shopify from './companies/shopify.png';
 import starbucks from './companies/starbucks.png';
 import tesla from './companies/tesla.png';
@@ -59,6 +61,8 @@ export {
   typescript,
   threejs,
   meta,
+  psp,
+  pst,
   shopify,
   starbucks,
   tesla,

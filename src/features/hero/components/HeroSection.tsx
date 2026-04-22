@@ -1,9 +1,12 @@
 import { motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 
 import { styles } from '@shared/styles/styles';
 import { ComputersCanvas } from '@features/canvas';
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={`relative w-full h-screen mx-auto`}>
       <div
@@ -16,13 +19,13 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I&apos;m <span className="text-[#eebbc3]">Pablo</span>
+            {t('hero.greetingPrefix')} <span className="text-[#eebbc3]">Pablo</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop creative solutions with&nbsp;
+            {t('hero.subtitlePrefix')}&nbsp;
             <br className="sm:block hidden" />
             <span className="text-[#eebbc3] font-bold">
-              Friendly Experiences
+              {t('hero.highlight')}
             </span>
           </p>
         </div>
