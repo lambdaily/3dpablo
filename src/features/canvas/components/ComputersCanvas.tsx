@@ -5,23 +5,24 @@ import CanvasLoader from '@shared/ui/Loader';
 
 type ComputersProps = {
   isMobile: boolean;
+  useLowPower: boolean;
 };
 
-const Computers = ({ isMobile }: ComputersProps) => {
+const Computers = ({ isMobile, useLowPower }: ComputersProps) => {
   const computer = useGLTF(`${import.meta.env.BASE_URL}desktop_pc/scene.gltf`);
 
   return (
     <mesh>
-      <hemisphereLight intensity={5.5} groundColor="black" />
+      <hemisphereLight intensity={useLowPower ? 3.5 : 5.5} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
         penumbra={1}
         intensity={2}
-        castShadow
-        shadow-mapSize={1024}
+        castShadow={!useLowPower}
+        shadow-mapSize={useLowPower ? 512 : 1024}
       />
-      <pointLight intensity={1} />
+      <pointLight intensity={useLowPower ? 0.7 : 1} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.55 : 0.75}
@@ -34,6 +35,7 @@ const Computers = ({ isMobile }: ComputersProps) => {
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isChromeMobile, setIsChromeMobile] = useState(false);
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -56,14 +58,32 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const userAgent = navigator.userAgent;
+    const isChrome = /Chrome\//.test(userAgent) || /CriOS\//.test(userAgent);
+    const isFirefox = /Firefox\//.test(userAgent) || /FxiOS\//.test(userAgent);
+    const isAndroid = /Android/.test(userAgent);
+    const isIOS = /iPhone|iPad|iPod/.test(userAgent);
+
+    setIsChromeMobile(isChrome && !isFirefox && (isAndroid || isIOS));
+  }, []);
+
+  const useLowPower = isMobile && isChromeMobile;
+
   return (
     <div className={`w-full h-full ${isMobile ? 'pointer-events-none' : ''}`}>
       <Canvas
         frameloop="demand"
-        shadows
-        dpr={isMobile ? [1, 1.25] : [1, 2]}
+        shadows={!useLowPower}
+        dpr={useLowPower ? [1, 1] : isMobile ? [1, 1.25] : [1, 2]}
         camera={{ position: [20, 3, 5], fov: 25 }}
-        gl={{ preserveDrawingBuffer: false, powerPreference: 'high-performance' }}
+        gl={{
+          preserveDrawingBuffer: false,
+          powerPreference: useLowPower ? 'low-power' : 'high-performance',
+          antialias: !useLowPower,
+          failIfMajorPerformanceCaveat: useLowPower,
+          stencil: !useLowPower,
+        }}
         style={{ touchAction: isMobile ? 'pan-y' : 'auto' }}
       >
         <Suspense fallback={<CanvasLoader />}>
@@ -74,10 +94,10 @@ const ComputersCanvas = () => {
             maxPolarAngle={Math.PI / 2}
             minPolarAngle={Math.PI / 2}
           />
-          <Computers isMobile={isMobile} />
+          <Computers isMobile={isMobile} useLowPower={useLowPower} />
         </Suspense>
 
-        <Preload all />
+        {!useLowPower ? <Preload all /> : null}
       </Canvas>
     </div>
   );

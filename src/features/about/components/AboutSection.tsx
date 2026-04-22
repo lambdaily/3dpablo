@@ -13,14 +13,12 @@ type ServiceCardProps = {
 };
 
 const ServiceCard = ({ index, title, icon }: ServiceCardProps) => (
-  <div className="xs:w-[250px] w-full">
+  <div className="xs:w-[300px] w-full max-w-[320px] mx-auto md:mx-0">
     <motion.div
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
+      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
           alt="web-development"
@@ -50,7 +48,7 @@ const About = () => {
       >
         {t('about.description')}
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap justify-center md:justify-start gap-10">
         {services.map((service, index) => (
           <ServiceCard
             key={service.titleKey}
