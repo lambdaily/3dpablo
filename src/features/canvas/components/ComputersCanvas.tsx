@@ -8,7 +8,7 @@ type ComputersProps = {
 };
 
 const Computers = ({ isMobile }: ComputersProps) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf');
+  const computer = useGLTF(`${import.meta.env.BASE_URL}desktop_pc/scene.gltf`);
 
   return (
     <mesh>
@@ -24,8 +24,8 @@ const Computers = ({ isMobile }: ComputersProps) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.55 : 0.75}
+        position={isMobile ? [0, -3.35, -2.2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -57,25 +57,32 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile} />
-      </Suspense>
+    <div className={`w-full h-full ${isMobile ? 'pointer-events-none' : ''}`}>
+      <Canvas
+        frameloop="demand"
+        shadows
+        dpr={isMobile ? [1, 1.25] : [1, 2]}
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: false, powerPreference: 'high-performance' }}
+        style={{ touchAction: isMobile ? 'pan-y' : 'auto' }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            enablePan={false}
+            enableRotate={!isMobile}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers isMobile={isMobile} />
+        </Suspense>
 
-      <Preload all />
-    </Canvas>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
+
+useGLTF.preload(`${import.meta.env.BASE_URL}desktop_pc/scene.gltf`);
 
 export default ComputersCanvas;
