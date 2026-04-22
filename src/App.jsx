@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import AboutPage from './components/About';
