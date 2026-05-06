@@ -60,6 +60,117 @@
     "sectionLabel": "Mi trabajo",
     "title": "Proyectos.",
     "description": "Estos proyectos reflejan cómo trabajo en casos reales: desde la idea inicial hasta la implementación. En cada uno comparto una breve descripción, el código fuente y, cuando está disponible, una demo en vivo. El objetivo es mostrar mi forma de resolver problemas, iterar y entregar soluciones útiles.",
+    "stoplightMobile": {
+      "name": "Stoplight Mobile",
+      "role": "Frontend Tech Lead",
+      "short": "App móvil cross-platform del programa global Poverty Stoplight — React Native + Material UI, soporte completo para 8 idiomas y diseño offline-first.",
+      "description": "App móvil cross-platform del programa global Poverty Stoplight, usada por encuestadores y familias para auto-diagnosticar su situación y trazar un camino para salir de la pobreza. Construida con React Native y Material UI, con soporte completo para 8 idiomas para que funcione en cualquier contexto, desde comunidades rurales hasta ONGs internacionales. Como Frontend Tech Lead lidero las decisiones de arquitectura, performance y offline-first que mantienen una experiencia fluida incluso en celulares de gama baja y conexiones inestables.",
+      "sections": {
+        "problem": {
+          "title": "El problema",
+          "body": "Poverty Stoplight es un programa de la Fundación Paraguaya con una misión concreta: crear un mundo sin pobreza. La app móvil tiene que permitir tomar encuestas en cualquier lugar del mundo — desde oficinas en Londres hasta comunidades rurales en Paraguay o Myanmar — con usuarios que tienen celulares de gama baja y conexiones inestables. Eso implica un comportamiento offline-first real, sincronización sin conflictos y una UX que no asume conexión rápida."
+        },
+        "role": {
+          "title": "Mi rol",
+          "body": "Como Frontend Tech Lead soy responsable de la arquitectura mobile, la calidad del código y la dirección a largo plazo del proyecto. Lidero un equipo de frontend, defino convenciones, reviso los PRs críticos y represento al frontend en las conversaciones de producto, diseño y backend."
+        },
+        "tech": {
+          "title": "Tecnología y arquitectura",
+          "body": "React Native + TypeScript con un design system basado en Material UI, Redux para el estado global e i18next para soportar 8 idiomas (en, es, pt-BR, pt-PT, bg, ht, ro, sk). Almacenamiento offline-first, cola de sincronización y un pipeline de CI/CD que publica a Google Play y App Store."
+        },
+        "impact": {
+          "title": "Impacto",
+          "body": "La plataforma ya supera el millón de semáforos completados en más de 20 países. Cada uno representa una familia que recibió un diagnóstico personalizado de su situación y un camino concreto para mejorarla — no es una métrica de vanidad."
+        }
+      }
+    },
+    "videoTitle": "Mirá la app en acción",
+    "galleryTitle": "Galería",
+    "learnMore": "Ver el caso completo",
+    "lambdaVaultApp": {
+      "name": "LambdaVault App",
+      "role": "Frontend Tech Lead · Mobile",
+      "short": "App móvil para macOS y Android construida con Flutter (Dart 3) y Material UI, con arquitectura limpia y foco fuerte en seguridad y UX.",
+      "description": "LambdaVault App es una app móvil multiplataforma enfocada en sesiones seguras y flujos sensibles. Está construida con Flutter (Dart 3) y componentes Material, con una arquitectura por capas que facilita mantenimiento y escalabilidad. El stack combina BLoC/Cubit para estado predecible, get_it para inyección de dependencias, dio para red, y persistencia segura con flutter_secure_storage + sqflite.",
+      "sections": {
+        "problem": {
+          "title": "El contexto",
+          "body": "La app maneja login, sesión activa y datos sensibles, por eso el reto fue combinar seguridad fuerte, buena experiencia de uso y rendimiento consistente en una sola base de código para Android y macOS."
+        },
+        "frontend": {
+          "title": "Base mobile",
+          "body": "Flutter (Dart 3) con Material UI, navegación con go_router y capas de UI refinadas con google_fonts y flutter_svg para mantener consistencia visual y una experiencia fluida en todo el producto."
+        },
+        "backend": {
+          "title": "Estado y arquitectura",
+          "body": "Estado con BLoC/Cubit (flutter_bloc + equatable) e inyección de dependencias con get_it. Esta combinación hace el estado más predecible, facilita testing y sostiene una arquitectura limpia y escalable por capas."
+        },
+        "security": {
+          "title": "Seguridad y persistencia",
+          "body": "Comunicación API con dio, credenciales protegidas con flutter_secure_storage y persistencia local con sqflite (shared_preferences como fallback). Además, local_auth agrega biometría para reforzar el acceso a flujos sensibles."
+        },
+        "deployment": {
+          "title": "Resultado",
+          "body": "El resultado es una app sólida y mantenible: mejor trazabilidad de estado, credenciales bien protegidas y UX consistente en múltiples plataformas, con una base técnica preparada para crecer sin fricción."
+        }
+      }
+    },
+    "lambdaVault": {
+      "name": "LambdaVault",
+      "role": "Creador · Full-stack",
+      "short": "Extensión de navegador construida con Vite + TypeScript + WXT + React, con backend en Go (Gin) usando SQLite, JWT, Argon2 y AES — segura por diseño y lista para Docker.",
+      "description": "LambdaVault es una extensión de navegador que construí end-to-end. El frontend es una app de Vite + TypeScript + WXT + React, y el backend es un servicio Go pequeño pero production-grade con Gin, SQLite (vía GORM), JWT para autenticación, Argon2 para el hash de contraseñas y AES para cifrar datos sensibles. Todo el stack está dockerizado para desplegarse de forma simple en plataformas como Railway.",
+      "sections": {
+        "problem": {
+          "title": "El problema",
+          "body": "Quería una bóveda self-hosted, privacy-first, a un click dentro del navegador, sin depender de un SaaS pesado. El objetivo: una extensión chica y rápida con criptografía sólida en ambos extremos."
+        },
+        "frontend": {
+          "title": "Stack del frontend",
+          "body": "Construido con WXT (toolkit moderno para extensiones) sobre Vite, TypeScript y React. WXT se encarga de generar el manifest cross-browser, hot reloading y los content/background scripts, así me concentro en la UX. El tipado estricto entre UI, almacenamiento y cliente de API hace que los refactors sean seguros."
+        },
+        "backend": {
+          "title": "Stack del backend",
+          "body": "Go + Gin para una API HTTP rápida y liviana, SQLite con GORM como ORM para los modelos y consultas. El código sigue una arquitectura limpia por capas — dominio, casos de uso e infraestructura — para mantenerse legible a medida que escala."
+        },
+        "security": {
+          "title": "Seguridad",
+          "body": "JWT para autenticación stateless, Argon2 para el hash de contraseñas (memory-hard, el estándar moderno) y AES para cifrar los datos sensibles en reposo. Cada secreto queda cifrado antes de tocar la base de datos."
+        },
+        "deployment": {
+          "title": "Configuración y despliegue",
+          "body": "Configuración por variables de entorno y una imagen Docker lista para correr en cualquier lado — desarrollo local con SQLite en un comando, y la misma imagen se despliega en Railway u otro container host sin cambios."
+        }
+      }
+    },
+    "aipota": {
+      "name": "Aipota",
+      "role": "Full-stack Developer",
+      "short": "Aplicación full-stack con frontend en React 19 + TypeScript + Vite y backend en Go + Gin + PostgreSQL, pensada para wishlists compartidas y logros.",
+      "description": "Aipota es una aplicación full-stack con separación clara entre frontend y backend. Está enfocada en wishlists compartidas, autenticación y sistema de achievements, con una base técnica moderna para escalar producto y equipo.",
+      "sections": {
+        "frontend": {
+          "title": "Frontend",
+          "body": "React 19 con TypeScript y Vite, UI basada en Material UI (MUI + icons), routing con React Router DOM y estilo con Emotion. La estructura está organizada por features modulares, contextos (AuthContext), hooks personalizados y utilidades como UUID."
+        },
+        "backend": {
+          "title": "Backend",
+          "body": "API REST construida en Go 1.23 con Gin. Usa GORM para persistencia, JWT para sesiones seguras, middleware CORS y godotenv para configuración. La base sigue una estructura limpia en handlers, models, middleware y router."
+        },
+        "database": {
+          "title": "Base de datos",
+          "body": "PostgreSQL 16 ejecutándose en Docker con volumen persistente (aipota_pgdata), configuración local simple y puerto 5432 expuesto para desarrollo."
+        },
+        "devops": {
+          "title": "Infraestructura y DevOps",
+          "body": "Docker Compose para levantar la base rápidamente, variables en .env y scripts de desarrollo concurrente para frontend + backend. El proyecto ya está preparado para builds separados de producción."
+        },
+        "outcome": {
+          "title": "Resultado",
+          "body": "Un stack moderno y mantenible que prioriza velocidad de desarrollo, tipado fuerte, APIs robustas y una arquitectura lista para evolucionar nuevas funcionalidades de listas compartidas y logros."
+        }
+      }
+    },
     "gifApp": {
       "name": "Gifs App",
       "description": "Aplicación para buscar y explorar GIFs en tiempo real usando la API de Giphy."
@@ -96,7 +207,27 @@
       "react": "react",
       "threejs": "three js",
       "tailwind": "tailwind",
-      "javascriptReactSpaced": "javascript / React"
+      "javascriptReactSpaced": "javascript / React",
+      "reactNative": "React Native",
+      "materialUi": "Material UI",
+      "i18n8Languages": "i18n · 8 idiomas",
+      "offlineFirst": "offline-first",
+      "flutterDart3": "Flutter · Dart 3",
+      "blocCubit": "BLoC/Cubit",
+      "getItDio": "get_it · dio",
+      "secureStorageSqflite": "secure_storage · sqflite",
+      "localAuth": "local_auth",
+      "typescript": "TypeScript",
+      "wxtVite": "WXT · Vite",
+      "goGin": "Go · Gin",
+      "sqliteGorm": "SQLite · GORM",
+      "docker": "Docker"
+      ,"react19": "React 19"
+      ,"vite": "Vite"
+      ,"reactRouter": "React Router DOM"
+      ,"postgres16": "PostgreSQL 16"
+      ,"dockerCompose": "Docker Compose"
+      ,"jwt": "JWT"
     }
   },
   "contact": {
@@ -119,6 +250,11 @@
   },
   "a11y": {
     "projectImage": "Imagen del proyecto",
-    "sourceCode": "Código fuente"
+    "sourceCode": "Código fuente",
+    "playStore": "Abrir en Google Play Store",
+    "appStore": "Abrir en Apple App Store",
+    "playStoreCaption": "Disponible en",
+    "appStoreCaption": "Descargar en",
+    "closeModal": "Cerrar"
   }
 }

@@ -66,12 +66,128 @@
   },
   "a11y": {
     "projectImage": "Proyecto ra'ãnga",
-    "sourceCode": "Código ypykue"
+    "sourceCode": "Código ypykue",
+    "playStore": "Eipe'a Google Play Store-pe",
+    "appStore": "Eipe'a Apple App Store-pe",
+    "playStoreCaption": "Ojejuhúva",
+    "appStoreCaption": "Emboguejy",
+    "closeModal": "Embotypa"
   },
   "projects": {
     "sectionLabel": "Che rembiapo",
     "title": "Proyectokuéra.",
     "description": "Ko'ã proyecto ohechauka che katupyry ha che experiencia tembiapo añetetépe. Káda proyecto oñemombe'u mbykymi ha orekó link código ha demo rehegua. Upéva ohechauka che ikatuha asoluciona problema ijetu'úva, amba'apo tecnología iñambuéva ndive ha amoguata proyecto porã.",
+    "stoplightMobile": {
+      "name": "Stoplight Mobile",
+      "role": "Frontend Tech Lead",
+      "short": "App móvil cross-platform Poverty Stoplight programa global rehegua — React Native + Material UI, soporte 8 ñe'ẽ-pe ha offline-first.",
+      "description": "App móvil cross-platform Poverty Stoplight programa global rehegua, oiporúva encuestador ha tekoha família-kuéra hekorã ojediagnostikávo ha ojeguerokuérachéma pohyikuiry oguerojaráne pobreza-gui. Ojejapo React Native ha Material UI ndive, oguerekóva soporte 8 ñe'ẽmemby-pe oikóhag̃ua opaite hendápe — tekoha mombyrygua guive ONG internacional peve. Frontend Tech Lead-ramo ñe'ẽrendarã arquitectura, performance ha offline-first rehegua mba'ekuaa ame'ẽ, hag̃ua experiencia osyry porã hetai celular michĩva ha conexión ndahasy'ãi-pe.",
+      "sections": {
+        "problem": {
+          "title": "Problema",
+          "body": "Poverty Stoplight ha'e Fundación Paraguaya programa, oguerekóva misión peteĩ tetã pobreza'ỹva. App móvil tekotevẽ omoneĩ encuesta opaite tetãme — oficina Londres pegua guive tekoha mombyry Paraguay térã Myanmar peve — usuario celular michĩ ha conexión hasy ndive. Upéva he'ise offline-first añeteguáva, sincronización conflicto'ỹre, ha UX nopytáivai conexión pya'e rehe."
+        },
+        "role": {
+          "title": "Che mba'apo",
+          "body": "Frontend Tech Lead-ramo che ajepokuaa arquitectura mobile, código mbarete ha proyecto rape ñe'ẽrendarã rehe. Aguenohẽ peteĩ ekipo frontend, amohenda convención, areviewva PR critico ha aguenohẽ frontend ñembohovái producto, diseño ha backend ndive."
+        },
+        "tech": {
+          "title": "Tecnología ha arquitectura",
+          "body": "React Native + TypeScript Material UI design system reheve, Redux estado global-pe ha i18next 8 ñe'ẽ rehegua (en, es, pt-BR, pt-PT, bg, ht, ro, sk). Almacenamiento offline-first, sincronización cola ha CI/CD pipeline omondóva Google Play ha App Store-pe."
+        },
+        "impact": {
+          "title": "Mba'éichagua impacto",
+          "body": "Plataforma ohasáma peteĩ millón semáforo oñembohu'ãvo 20 tetã pukukuépe. Káda peteĩ ha'e peteĩ família ohupytýva diagnóstico personalizado ha tape ñembohape oñemboheko porãvévo — ndaha'éi métrica vanidad-rehegua."
+        }
+      }
+    },
+    "videoTitle": "Ehecha app oĩháicha",
+    "galleryTitle": "Ta'ãnga aty",
+    "learnMore": "Eikuaave caso completo",
+    "lambdaVaultApp": {
+      "name": "LambdaVault App",
+      "role": "Frontend Tech Lead · Mobile",
+      "short": "App móvil macOS ha Android-pe g̃uarã, Flutter (Dart 3) ha Material UI reheve, arquitectura limpia ha seguridad/UX foco reheve.",
+      "description": "LambdaVault App ha'e app móvil multiplataforma oñemopyenda hag̃ua sesión segura ha flujo sensible rehe. Ojejapo Flutter (Dart 3) reheve, Material UI ndive, ha arquitectura por capas ombohape mantenimiento ha escalabilidad.",
+      "sections": {
+        "problem": {
+          "title": "Contexto",
+          "body": "Reto principal ha'e oñembojoaju seguridad mbarete, UX osyry porã ha rendimiento estable peteĩ base de código añoite Android ha macOS-pe g̃uarã."
+        },
+        "frontend": {
+          "title": "Base mobile",
+          "body": "Flutter (Dart 3), go_router navegación-pe, ha UI layer iporãvéva google_fonts ha flutter_svg ndive, experiencia consistente hag̃ua."
+        },
+        "backend": {
+          "title": "Estado ha arquitectura",
+          "body": "BLoC/Cubit (flutter_bloc + equatable) ojapo estado predecible, ha get_it rupive dependencia kuéra ojejeporu hekopete hag̃ua."
+        },
+        "security": {
+          "title": "Seguridad ha persistencia",
+          "body": "Red/API dio ndive, credenciales flutter_secure_storage-pe, persistencia local sqflite-pe (shared_preferences fallback-ramo), ha biometría local_auth rupive."
+        },
+        "deployment": {
+          "title": "Resultado",
+          "body": "App mbarete ha escalable, estado controlado porã, credenciales oñeñangareko mbarete ha UX iporãva múltiples plataforma-pe."
+        }
+      }
+    },
+    "lambdaVault": {
+      "name": "LambdaVault",
+      "role": "Apohára · Full-stack",
+      "short": "Navegador extensión ojejapóva Vite + TypeScript + WXT + React reheve, backend Go (Gin) ndive: SQLite, JWT, Argon2 ha AES — segura por diseño ha Docker-pe oñembosako'íma.",
+      "description": "LambdaVault ha'e peteĩ navegador extensión ajapóva opa hendáicha. Frontend ha'e Vite + TypeScript + WXT + React app, ha backend ha'e peteĩ Go servicio michĩva production-grade ndive Gin reheve, SQLite (GORM rupive), JWT autenticación-pe, Argon2 contraseña hash-pe ha AES dato sensible cifrado-pe. Opa stack oĩ Docker-pe oikóva hag̃ua sapy'aitépe Railway-pe térã ambue plataforma-pe.",
+      "sections": {
+        "problem": {
+          "title": "Problema",
+          "body": "Aipota peteĩ self-hosted bóveda, privacy-first, navegador-pe peteĩ click-pe, oñedependekuaa'ỹre SaaS pohýi rehe. Mba'eraha: peteĩ extensión michĩva ha pya'éva criptografía mbarete reheve mokõive ladope."
+        },
+        "frontend": {
+          "title": "Frontend stack",
+          "body": "Ojejapo WXT (toolkit moderno extensión-pe g̃uarã) reheve Vite, TypeScript ha React ári. WXT ojapo cross-browser manifest, hot reloading ha content/background scripts, upéicha ajepokuaa UX rehe. Tipado mbarete UI, almacenamiento ha API cliente apytépe ojapo refactor seguro."
+        },
+        "backend": {
+          "title": "Backend stack",
+          "body": "Go + Gin peteĩ API HTTP pya'e ha vevuíva, SQLite GORM ndive ORM-ramo modelo ha consulta peg̃uarã. Código ohape arquitectura potĩ capa rupi — dominio, caso de uso ha infraestructura — okakuaakuévo opyta porãve."
+        },
+        "security": {
+          "title": "Seguridad",
+          "body": "JWT autenticación stateless-pe g̃uarã, Argon2 contraseña hash-pe (memory-hard, estándar moderno) ha AES dato sensible cifrado-pe. Káda secreto opyta cifrado base de datos rohanihápe."
+        },
+        "deployment": {
+          "title": "Configuración ha despliegue",
+          "body": "Configuración variable entorno rupive ha Docker imagen oñembosako'íma oikoñehag̃ua opaite hendápe — desarrollo local SQLite ndive peteĩ comando-pe, ha upe imagen ojeplega Railway-pe térã ambue container host-pe oñemoambue'ỹre."
+        }
+      }
+    },
+    "aipota": {
+      "name": "Aipota",
+      "role": "Desarrollador Full-stack",
+      "short": "App full-stack React 19 + TypeScript + Vite frontend-pe, ha Go + Gin + PostgreSQL backend-pe, wishlists compartidas rehe ojepytasóva.",
+      "description": "Aipota ha'e app full-stack orekóva frontend ha backend separación clara. Oñemopyenda wishlists compartidas, autenticación ha achievements rehe, arquitectura moderna reheve.",
+      "sections": {
+        "frontend": {
+          "title": "Frontend",
+          "body": "React 19, TypeScript, Vite, Material UI, React Router DOM ha Emotion, estructura modular por features reheve."
+        },
+        "backend": {
+          "title": "Backend",
+          "body": "API REST Go 1.23 + Gin ndive, GORM, JWT, CORS middleware ha configuración variables de entorno rupive."
+        },
+        "database": {
+          "title": "Base de datos",
+          "body": "PostgreSQL 16 Docker-pe, volumen persistente ndive datos rehegua."
+        },
+        "devops": {
+          "title": "Infraestructura ha DevOps",
+          "body": "Docker Compose setup local pya'e hag̃ua, ha scripts concurrentes frontend + backend desarrollo-pe g̃uarã."
+        },
+        "outcome": {
+          "title": "Resultado",
+          "body": "Stack moderno ha mantenible, oñembosako'íma okakuaa hag̃ua funcionalidades colaborativas pyahu."
+        }
+      }
+    },
     "gifApp": {
       "name": "Gifs App",
       "description": "Página hag̃ua reheka nde GIF rehayhuvéva Giphy API rupive."
@@ -108,7 +224,27 @@
       "react": "react",
       "threejs": "three js",
       "tailwind": "tailwind",
-      "javascriptReactSpaced": "javascript / React"
+      "javascriptReactSpaced": "javascript / React",
+      "reactNative": "React Native",
+      "materialUi": "Material UI",
+      "i18n8Languages": "i18n · 8 ñe'ẽ",
+      "offlineFirst": "offline-first",
+      "flutterDart3": "Flutter · Dart 3",
+      "blocCubit": "BLoC/Cubit",
+      "getItDio": "get_it · dio",
+      "secureStorageSqflite": "secure_storage · sqflite",
+      "localAuth": "local_auth",
+      "typescript": "TypeScript",
+      "wxtVite": "WXT · Vite",
+      "goGin": "Go · Gin",
+      "sqliteGorm": "SQLite · GORM",
+      "docker": "Docker",
+      "react19": "React 19",
+      "vite": "Vite",
+      "reactRouter": "React Router DOM",
+      "postgres16": "PostgreSQL 16",
+      "dockerCompose": "Docker Compose",
+      "jwt": "JWT"
     }
   }
 }
