@@ -27,6 +27,10 @@ import emoji from './emojis.png';
 import test from './test.png';
 import reproductor from './reproductor.png';
 import pig from './pig.png';
+import stoplight from './portfolio/stoplight.jpeg';
+import lambdaVaultExtension from './portfolio/lambdavault-extension.png';
+import lambdaVaultApp from './portfolio/lambdavault.png';
+import aipota from './portfolio/aipota.png';
 import meta from './companies/meta.png';
 import psp from './companies/psp.jpg';
 import pst from './companies/pst.png';
@@ -77,4 +81,8 @@ export {
   test,
   reproductor,
   pig,
+  stoplight,
+  lambdaVaultExtension,
+  lambdaVaultApp,
+  aipota,
 };

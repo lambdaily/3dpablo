@@ -20,6 +20,10 @@ import {
   test,
   pig,
   reproductor,
+  stoplight,
+  lambdaVaultExtension,
+  lambdaVaultApp,
+  aipota,
 } from '@assets';
 
 export type NavLink = {
@@ -51,12 +55,31 @@ export type ProjectTag = {
   color: string;
 };
 
+export type ProjectDetailSection = {
+  titleKey: string;
+  bodyKey: string;
+};
+
+export type ProjectGalleryImage = {
+  src: string;
+  altKey?: string;
+};
+
 export type Project = {
   nameKey: string;
   descriptionKey: string;
+  shortDescriptionKey?: string;
   tags: ProjectTag[];
   image: string;
+  images?: ProjectGalleryImage[];
   source_code_link?: string;
+  playStoreLink?: string;
+  appStoreLink?: string;
+  showPlayStoreBadge?: boolean;
+  showAppStoreBadge?: boolean;
+  roleKey?: string;
+  detailSections?: ProjectDetailSection[];
+  videoUrl?: string;
 };
 
 export const defaultOptions = {
@@ -178,6 +201,225 @@ const technologies: Technology[] = [
 ];
 
 const projects: Project[] = [
+  {
+    nameKey: 'projects.stoplightMobile.name',
+    descriptionKey: 'projects.stoplightMobile.description',
+    shortDescriptionKey: 'projects.stoplightMobile.short',
+    roleKey: 'projects.stoplightMobile.role',
+    tags: [
+      {
+        nameKey: 'projects.tags.reactNative',
+        color: 'blue-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.materialUi',
+        color: 'pink-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.i18n8Languages',
+        color: 'green-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.offlineFirst',
+        color: 'orange-text-gradient',
+      },
+    ],
+    image: stoplight,
+    playStoreLink:
+      'https://play.google.com/store/apps/details?id=com.povertystoplightapp&hl=es_UY',
+    appStoreLink:
+      'https://apps.apple.com/us/app/stoplight-mobile/id1602232536',
+    videoUrl: 'https://www.youtube.com/watch?v=m0hNC1SX65k',
+    detailSections: [
+      {
+        titleKey: 'projects.stoplightMobile.sections.problem.title',
+        bodyKey: 'projects.stoplightMobile.sections.problem.body',
+      },
+      {
+        titleKey: 'projects.stoplightMobile.sections.role.title',
+        bodyKey: 'projects.stoplightMobile.sections.role.body',
+      },
+      {
+        titleKey: 'projects.stoplightMobile.sections.tech.title',
+        bodyKey: 'projects.stoplightMobile.sections.tech.body',
+      },
+      {
+        titleKey: 'projects.stoplightMobile.sections.impact.title',
+        bodyKey: 'projects.stoplightMobile.sections.impact.body',
+      },
+    ],
+  },
+  {
+    nameKey: 'projects.lambdaVaultApp.name',
+    descriptionKey: 'projects.lambdaVaultApp.description',
+    shortDescriptionKey: 'projects.lambdaVaultApp.short',
+    roleKey: 'projects.lambdaVaultApp.role',
+    tags: [
+      {
+        nameKey: 'projects.tags.flutterDart3',
+        color: 'blue-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.blocCubit',
+        color: 'pink-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.getItDio',
+        color: 'green-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.secureStorageSqflite',
+        color: 'orange-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.localAuth',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: lambdaVaultApp,
+    showPlayStoreBadge: true,
+    showAppStoreBadge: true,
+    detailSections: [
+      {
+        titleKey: 'projects.lambdaVaultApp.sections.problem.title',
+        bodyKey: 'projects.lambdaVaultApp.sections.problem.body',
+      },
+      {
+        titleKey: 'projects.lambdaVaultApp.sections.frontend.title',
+        bodyKey: 'projects.lambdaVaultApp.sections.frontend.body',
+      },
+      {
+        titleKey: 'projects.lambdaVaultApp.sections.backend.title',
+        bodyKey: 'projects.lambdaVaultApp.sections.backend.body',
+      },
+      {
+        titleKey: 'projects.lambdaVaultApp.sections.security.title',
+        bodyKey: 'projects.lambdaVaultApp.sections.security.body',
+      },
+      {
+        titleKey: 'projects.lambdaVaultApp.sections.deployment.title',
+        bodyKey: 'projects.lambdaVaultApp.sections.deployment.body',
+      },
+    ],
+  },
+  {
+    nameKey: 'projects.lambdaVault.name',
+    descriptionKey: 'projects.lambdaVault.description',
+    shortDescriptionKey: 'projects.lambdaVault.short',
+    roleKey: 'projects.lambdaVault.role',
+    tags: [
+      {
+        nameKey: 'projects.tags.typescript',
+        color: 'blue-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.wxtVite',
+        color: 'pink-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.react',
+        color: 'blue-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.goGin',
+        color: 'orange-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.sqliteGorm',
+        color: 'green-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.docker',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: lambdaVaultExtension,
+    detailSections: [
+      {
+        titleKey: 'projects.lambdaVault.sections.problem.title',
+        bodyKey: 'projects.lambdaVault.sections.problem.body',
+      },
+      {
+        titleKey: 'projects.lambdaVault.sections.frontend.title',
+        bodyKey: 'projects.lambdaVault.sections.frontend.body',
+      },
+      {
+        titleKey: 'projects.lambdaVault.sections.backend.title',
+        bodyKey: 'projects.lambdaVault.sections.backend.body',
+      },
+      {
+        titleKey: 'projects.lambdaVault.sections.security.title',
+        bodyKey: 'projects.lambdaVault.sections.security.body',
+      },
+      {
+        titleKey: 'projects.lambdaVault.sections.deployment.title',
+        bodyKey: 'projects.lambdaVault.sections.deployment.body',
+      },
+    ],
+  },
+  {
+    nameKey: 'projects.aipota.name',
+    descriptionKey: 'projects.aipota.description',
+    shortDescriptionKey: 'projects.aipota.short',
+    roleKey: 'projects.aipota.role',
+    tags: [
+      {
+        nameKey: 'projects.tags.react19',
+        color: 'blue-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.vite',
+        color: 'green-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.materialUi',
+        color: 'pink-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.reactRouter',
+        color: 'orange-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.goGin',
+        color: 'green-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.postgres16',
+        color: 'blue-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.dockerCompose',
+        color: 'pink-text-gradient',
+      },
+      {
+        nameKey: 'projects.tags.jwt',
+        color: 'orange-text-gradient',
+      },
+    ],
+    image: aipota,
+    detailSections: [
+      {
+        titleKey: 'projects.aipota.sections.frontend.title',
+        bodyKey: 'projects.aipota.sections.frontend.body',
+      },
+      {
+        titleKey: 'projects.aipota.sections.backend.title',
+        bodyKey: 'projects.aipota.sections.backend.body',
+      },
+      {
+        titleKey: 'projects.aipota.sections.database.title',
+        bodyKey: 'projects.aipota.sections.database.body',
+      },
+      {
+        titleKey: 'projects.aipota.sections.devops.title',
+        bodyKey: 'projects.aipota.sections.devops.body',
+      },
+      {
+        titleKey: 'projects.aipota.sections.outcome.title',
+        bodyKey: 'projects.aipota.sections.outcome.body',
+      },
+    ],
+  },
   {
     nameKey: 'projects.gifApp.name',
     descriptionKey: 'projects.gifApp.description',
