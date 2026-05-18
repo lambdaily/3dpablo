@@ -17,9 +17,9 @@ import {
   pst,
   portfolio,
   gif,
-  test,
+  // test,
   pig,
-  reproductor,
+  // reproductor,
   stoplight,
   lambdaVaultExtension,
   lambdaVaultApp,
@@ -471,26 +471,26 @@ const projects: Project[] = [
     ],
     image: pig,
   },
-  {
-    nameKey: 'projects.webMusicPlayer.name',
-    descriptionKey: 'projects.webMusicPlayer.description',
-    tags: [
-      {
-        nameKey: 'projects.tags.css',
-        color: 'blue-text-gradient',
-      },
-      {
-        nameKey: 'projects.tags.html',
-        color: 'green-text-gradient',
-      },
-      {
-        nameKey: 'projects.tags.javascript',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: reproductor,
-    source_code_link: 'https://lambdaily.github.io/neumoplayer/',
-  },
+  // {
+  //   nameKey: 'projects.webMusicPlayer.name',
+  //   descriptionKey: 'projects.webMusicPlayer.description',
+  //   tags: [
+  //     {
+  //       nameKey: 'projects.tags.css',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       nameKey: 'projects.tags.html',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       nameKey: 'projects.tags.javascript',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: reproductor,
+  //   source_code_link: 'https://lambdaily.github.io/neumoplayer/',
+  // },
   {
     nameKey: 'projects.portfolioWeb.name',
     descriptionKey: 'projects.portfolioWeb.description',
@@ -511,22 +511,22 @@ const projects: Project[] = [
     image: portfolio,
     source_code_link: 'https://lambdaily.github.io/3dpablo/',
   },
-  {
-    nameKey: 'projects.compatibilityTest.name',
-    descriptionKey: 'projects.compatibilityTest.description',
-    tags: [
-      {
-        nameKey: 'projects.tags.javascriptReactSpaced',
-        color: 'blue-text-gradient',
-      },
-      {
-        nameKey: 'projects.tags.css',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: test,
-    source_code_link: 'https://curious-sherbet-e0abb5.netlify.app/',
-  },
+  // {
+  //   nameKey: 'projects.compatibilityTest.name',
+  //   descriptionKey: 'projects.compatibilityTest.description',
+  //   tags: [
+  //     {
+  //       nameKey: 'projects.tags.javascriptReactSpaced',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       nameKey: 'projects.tags.css',
+  //       color: 'green-text-gradient',
+  //     },
+  //   ],
+  //   image: test,
+  //   source_code_link: 'https://curious-sherbet-e0abb5.netlify.app/',
+  // },
 ];
 
 export { services, experiences, technologies, projects };
